@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>See World With Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+        .nav {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .nav li {
+            padding: 0 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .location {
+            margin: 15px;
+            flex-basis: 30%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>See World With Us</h1>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Book Flights</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="location">
+            <img src="location1.jpg" alt="Location 1" style="width:100%">
+            <h3>Location 1</h3>
+            <p>Description for Location 1...</p>
+        </div>
+        <div class="location">
+            <img src="location2.jpg" alt="Location 2" style="width:100%">
+            <h3>Location 2</h3>
+            <p>Description for Location 2...</p>
+        </div>
+    </div>
+    <div class="form-section">
+        <h2>Book Your Trip</h2>
+        <form>
+            <input type="text" placeholder="Your Name" name="name">
+            <input type="email" placeholder="Your Email" name="email">
+            <select name="destination">
+                <option value="">Select Destination</option>
+                <option value="location1">Location 1</option>
+                <option value="location2">Location 2</option>
+            </select>
+            <textarea placeholder="Special Requests" name="requests"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        &copy; 2023 See World With Us. All rights reserved.
+    </div>
+</body>
+</html>
